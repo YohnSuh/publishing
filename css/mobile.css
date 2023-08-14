@@ -1,0 +1,200 @@
+header {
+    position: relative;
+    background-color: #E41e25;
+    height: 53px;
+    text-align: center;
+    padding-top: 10px;
+}
+h1 .mo {
+    height: 18px;
+}
+h1 .pc {
+    display: none;
+}
+.hWrap button {
+    border: 0;
+    width: 65px;
+    height: 63px;
+    background-color: #222;
+    cursor: pointer;
+}
+.navBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.myBtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.myBtn .pc {
+    display: none;
+}
+.hWrap button img {
+    width: 25px;
+}
+
+nav {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.6);
+    backdrop-filter: bluer(5px);
+    transition: .8s;
+    display: none;
+}
+nav .util {
+    display: flex;
+}
+nav .closeBtn {
+    width: 65px;
+    height: 65px;
+    background-color: white;
+}
+nav form {
+    display: flex;
+    width: calc(100% - 65px);
+    height: 65px;
+    background-color: #333;
+}
+nav form input {
+    width: calc(100% - 65px);
+    background-color: transparent;
+    border: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+    color: white;
+}
+nav form .srchBtn {
+    width: 65px;
+    height: 65px;
+    background-color: #333;
+}
+nav .gnb {
+    text-align: left;
+}
+nav .gnb li {
+    padding-left: 20px;
+    line-height: 45px;
+    background-color: #333;
+    border-top: 1px solid #444;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+nav .gnb .red {
+    background-color: #E41e25;
+}
+.srchBtn2 {
+    display: none;
+}
+.banner img {
+    vertical-align: top;
+}
+.banner .mo {
+    width: 100%;
+}
+.banner .tablet {
+    display: none;
+}
+.con {
+    display: flex;
+    flex-wrap: wrap;
+}
+.con .item {
+    width: 50%;
+    position: relative;
+}
+.con .item img {
+    width: 100%;
+    vertical-align: top;
+    /* display: block; == vertical-align: top; */
+}
+.con .item .over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.8);
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: 1s;
+}
+.con .item:hover .over {
+    opacity: 1;
+}
+.con .item .bnSns {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width:30px;
+}
+/* 
+[ css 선택자 우선 순위 ]
+    - 태그 < class < id
+    - 윗줄 < 아랫줄
+    - .a .c < .a .b .c
+*/
+
+footer .fWrap {
+    background-color: #333;
+    padding: 20px;
+}
+.fWrap ul {
+    display: flex;
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.fWrap ul:not(.fSns) li:after {
+    content: "|";
+    margin: 0 5px;
+    color: #666;
+}
+.fWrap ul:not(.fSns) li:last-child:after {
+    content: none;
+}
+.fWrap .red {
+    color: #E41e25;
+}
+.fWrap .fSns {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.fWrap .fSns .mo {
+    height: 27px;
+    margin-right: 30px;
+}
+
+.fSns .pc,
+.fSns .pc_on {
+    display: none;
+}
+
+@media all and (min-width: 768px) {
+    .banner .mo {
+        display: none;
+    }
+    .banner .tablet {
+        width: 100%;
+        display: block;
+    }
+    .con .item {
+        width: calc(100% / 3);
+    }
+    .fWrap .f_inner {
+        display: flex;
+    }
+    .fWrap .f_inner .fMenu {
+        margin-right: 15px;
+    }
+}
