@@ -1,0 +1,465 @@
+header {
+    height:57px;
+    border-top: 2px solid #50b5ff;
+}
+.hWrap {
+    width: 1092px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.hWrap > * {
+    display: flex;
+}
+.hWrap h1 {
+    margin-top: 10px;
+}
+/* 상단메뉴 */
+.gnb {
+    font-weight: 900;
+}
+.gnb li:not(:last-child) {
+    margin-right: 50px;
+}
+/* 검색박스 */
+.srch {
+    position: relative;
+    background-color: #50b5ff;
+}
+.srch input {
+    width: 164px;
+    height: 26px;
+    padding-left: 5px;
+    padding-right:25px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+.srch input::placeholder {
+    font-size: 12px;
+}
+.srch button {
+    position: absolute;
+    top:50%;
+    right: 3px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+/* 로그인/회원가입 */
+.util li {
+    width: 64px;
+    height: 28px;
+    color: #fff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 14px;
+    border: 1px solid rgba(0, 0, 0, .3);
+    border-left: 0;
+    border-right: 0;
+}
+.util .login {
+    background-color: #f49600;
+    margin-right: 12px;
+}
+.util .join {
+    background-color: #50b5ff;
+}
+/* 첫 번째 배너 */
+.mainVisual {
+    height: 454px;
+    background-image: url("../images/key_bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+}
+.mainVisual h2 {
+    padding-top: 80px;
+    font-size: 40px;
+}
+.mainVisual .subTit {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.mainVisual .srchBox {
+    width: 600px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, .6);
+    margin: 0 auto;
+    border-radius: 3px;
+    padding: 20px 0;
+}
+.mainVisual .srchForm {
+    position: relative;
+    width: 560px;
+    margin: 0 auto;
+}
+.mainVisual .srchForm input {
+    width: 560px;
+    height: 50px;
+    box-sizing: border-box;
+    /* 
+    기본적으로 border와 padding은 공간값에 추가가 된다.
+    box-sizing: border-box를 적용시킬 경우,
+    요소의 기존 너비와 높이 안쪽으로 패딩과 보더가 생성된다.
+    */
+    border: 0;
+    padding-left: 10px;
+    padding-right: 60px;
+}
+.mainVisual .srchForm button {
+    position: absolute;
+    top: calc(50% + 1.5px);
+    right: 2px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.mainVisual .srchBox > div {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 20px 0;
+    font-size: 14px;
+}
+.mainVisual .srchBox > div > p a:hover {
+    text-decoration: underline;
+}
+
+/* 여행지 안내 */
+.s1 {
+    margin-bottom: 70px;
+    margin-top: 70px;
+}
+.setTit {
+    margin-bottom: 30px;
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+}
+.s1 .con {
+    width: 1092px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+.s1 .con .item {
+    width: 348px;
+}
+.s1 .con h4 {
+    margin-top: 30px;
+    margin-bottom: 22px;
+    color:#0087ea;
+    font-size: 18px;
+    text-align: center;
+}
+.s1 .con p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: left;
+}
+.s1 .con .item img {
+    transition: .5s;
+}
+.s1 .con .item img:hover {
+    box-shadow: 2px 2px 3px rgba(0,0,0,.3);
+}
+.s1 .more {
+    color: #f49600;
+    font-size: 14px;
+    text-decoration: underline;
+    text-align: center;
+}
+/* 여행일정 */
+.s2 {
+    background-color: #f0f0f0;
+    padding-bottom: 70px;
+    padding-top:70px;
+}
+.s2 .con {
+    width:1092px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0 auto;
+}
+.sctTxt {
+    text-align: center;
+    font-size: 16px;
+    color:#666;
+    margin: 10px 0 30px;
+}
+.s2 .con .item {
+    width: 346px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 22px;
+}
+.s2 .con .photo {
+    width: 346px;
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+.s2 .con .photo img {
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.s2 .con .photo .photoTit {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    height: 48px;
+    padding-left: 15px;
+    background-image: linear-gradient(transparent,#000);
+    width: 100%;
+}
+.s2 .con .photo .photoTit h4 {
+    color: white;
+}
+.s2 .con .photo .photoTit .date {
+    color: #179dff;
+}
+.s2 .con .photo .photoTit .date span {
+    color: #999;
+}
+.s2 .con .info {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    color: #666;
+}
+.s2 .con .info li:nth-child(2) {
+    margin: 6px 0;
+}
+.s2 .con .info .user {
+    background-image: url("../images/icon_user.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+.s2 .con .cnt p {
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding-left: 18px;
+    display: inline;
+}
+.s2 .con .cnt p:nth-child(1) {
+    background-image: url("../images/icon_spot.png");
+}
+.s2 .con .cnt p:nth-child(2) {
+    background-image: url("../images/icon_view.png");
+    margin: 0 10px;
+    padding-left:23px;
+}
+.s2 .con .cnt p:nth-child(3) {
+    background-image: url("../images/icon_copy.png");
+}
+
+.s2 .item:hover img {
+    transform: scale(1.2);
+}
+.moreBtn {
+    background-color: #fff;
+    padding:12px 0;
+    border: 1px solid #ccc;
+    text-align: center;
+    width: 346px;
+    margin: 0 auto;
+    font-size:14px;
+    color: #666;
+}
+
+/* 여행팁 */
+.s3 {
+    margin: 70px 0;
+}
+.s3 .con {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1092px;
+    margin: 0 auto;
+}
+.s3 .item {
+    width: 261px;
+    height: 310px;
+    background-color: white;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.s3 .pic {
+    position: relative;
+    height: 160px;
+    overflow: hidden;
+}
+
+.s3 .con a:first-child .item,
+.s3 .con a:last-child .item {
+    width: 538px;
+}
+.s3 .pic img {
+    width: 100%;
+    height: 100%;
+    transition: 1.5s;
+}
+.s3 h4 {
+    margin: 25px 0;
+}
+.s3 .info {
+    padding: 0 20px;
+}
+.s3 .info p {
+    color:#666;
+    font-size: 14px;
+}
+.s3 a:hover img {
+    transform: scale(1.2);
+}
+.s3 .spot {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-image: url("../images/spot_cnt.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-weight: 900;
+}
+
+/* 여행지 사진 */
+.photoWrap {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-color: #f0f0f0;
+}
+.photoWrap > div {
+    display: flex;
+    width: 1092px;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+.photoWrap .photoBox {
+    position: relative;
+}
+.photoWrap .photoBox h4 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-weight: 900;
+    color: white;
+    text-shadow: 2px 2px 3px rgba(0,0,0.3);
+    font-size: 18px;
+}
+.photoWrap .item img {
+    display: block;
+    margin-top: 13px;
+}
+
+/* 하단 배너 */
+.s4 {
+    background: url("../images/mobile_bg.png") no-repeat center / cover;
+    padding-top:70px;
+}
+.s4 .wrap {
+    display: flex;
+    width: 1092px;
+    margin: 0 auto;
+}
+.s4 h2 {
+    font-size: 26px;
+    font-weight: 600;
+    color: #0083e3;
+    margin-bottom: 10px;
+}
+.s4 .text {
+    margin-left: 70px;
+}
+.s4 .text p {
+    color: #666;
+    line-height: 22px;
+    margin-bottom: 35px;
+    font-size: 14px;
+}
+.s4 .text ul {
+    display: flex;
+}
+.s4 .text ul li {
+    margin-right: 7px;
+}
+/* 이미지의 vertical-align 기본값은 baseline 속성 때문에
+하단에 이미지가 뜨게 된다.
+이를 방지하기 위해 vertical-align : center, display: block을 준다. */
+/* footer */
+footer {
+    background-color: #363c48;
+}
+.fwrap {
+    display: flex;
+    width: 1092px;
+    margin: 0 auto;
+    justify-content: space-between;
+    padding: 30px 0 25px;
+}
+.fwrap .item {
+    width: 260px;
+}
+.fwrap .item h4 {
+    color: #ccc;
+    border-bottom: #424753 1px solid;
+    padding-bottom: 5px;
+}
+.fwrap .item li {
+    color: white;
+    padding-top: 10px;
+    font-size: 12px;
+    font-weight: lighter;
+}
+.fwrap .selectBox {
+    display: flex;
+}
+.fwrap .lang {
+    margin-right: 10px;
+}
+.fwrap .lang, .fwrap .money {
+    width: 103px;
+    margin-top: 15px;
+    border: #424753 1px solid;
+    padding: 5.5px 10px;
+    text-align: left;
+    color: #ccc;
+    background: url("../images/arr_sel.png") no-repeat right 10px center / 10px;
+    /* center에서 거리 띄우기는 안된다 */
+}
+.fwrap .snsBox img {
+    margin-top: 20px;
+    margin-right: 10px;
+}
+footer .copy {
+    padding: 10px 0;
+    background: rgba(0, 0, 0, .2);
+    color: #ccc;
+    font-size: 12px;
+    border-top: #424753 1px solid;
+}
+footer .copy > div {
+    width: 1092px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
