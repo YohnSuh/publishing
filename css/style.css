@@ -1,0 +1,340 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    color: white;
+    
+    display: flex;
+}
+
+.hWrap {
+    width: 980px;
+    margin: 0 auto;
+    position: relative;
+}
+h1 {
+    padding-top: 35px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #666;
+}
+.hWrap .util {
+    position:absolute;
+    top: 24px;
+    right: 0;
+    font-size: 12px;
+    color:#c5c5c5;
+    display: flex;
+}
+.hWrap .util li:not(:last-child):after {
+    content:'|';
+    /* margin: 0 7px; */
+    margin-left: 7px;
+    margin-right: 7px;
+}
+/* .util li:last-child:after {
+    content: none;
+} */
+
+.hWrap .subGnb {
+    position: absolute;
+    top: 60px;
+    left: 260px;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.hWrap .subGnb li {
+    margin-left: 20px;
+}
+.hWrap .subGnb li:last-child {
+    color: seagreen;
+}
+.srch {
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+.srch input {
+    background-color: transparent;
+    border: 2px solid white;
+    width: 160px;
+    height: 23px;
+    color: white;
+}
+.srch button {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: transparent;
+    border: 0; /* none은 안 쓰나 */
+}
+.hWrap .gnb {
+    display: flex;
+    margin-top: 10px;
+    padding-bottom:10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.hWrap .gnb li {
+    padding: 10px 20px;
+}
+.hWrap .gnb li:hover {
+    background-color: white;
+    color: black;
+}
+.gnb .yellow {
+    color: yellow;
+    margin-left: auto;
+    /* flex 상태인 아이템들이나 일반 블록요소를 한 쪽 끝으로 밀어버리고 싶을 때는 반대쪽 마진을 오토로 주면된다. */
+}
+
+/* 배너영역 */
+.banner {
+    position: relative;
+}
+.banner .bnImg {
+    height: 400px;
+    background-image: url("../images/main_bn.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner .bnImg a {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 400px;
+}
+.banner .prev {
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+}
+.banner .next {
+    position: absolute;
+    top: 50%;
+    right: 100px;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+}
+.banner .pager {
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+}
+.banner .pager li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* 메인 이미지 */
+.row1,.row2 {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+}
+
+/* 메인 캐러셀 */
+.row3 {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+    position: relative;
+}
+.row3 .con {
+    width: 875px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+
+.row3 .con > div { 
+    width: 175px;
+    height: 209px;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.item1 {
+    background-image: url("../images/md_itme1.jpg");
+}
+.item2 {
+    background-image: url("../images/md_itme2.jpg");
+}
+.item3 {
+    background-image: url("../images/md_itme3.jpg");
+}
+.item4 {
+    background-image: url("../images/md_itme4.jpg");
+}
+.item5 {
+    background-image: url("../images/md_itme5.jpg");
+}
+.row3 .txt {
+    position: absolute;
+    left:0;
+    bottom: 0;
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+}
+.row3 .txt h4 {
+    font-weight: bold;
+    color: #111;
+}
+.row3 .txt p {
+    color: #363636;
+}
+
+/* 캐러셀버튼 */
+.row3 button {
+    background-color: transparent;
+    border: 0;
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.row3 .mdPrev {
+    left:0;
+}
+.row3 .mdNext {
+    right:0;
+}
+.row4 {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 18px;
+}
+.row5 {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row5 h3 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.row5 .con {
+    display: flex;
+    justify-content: center;
+}
+.row5 .item {
+    display: flex;
+    width: 33.33%;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.row5 .item:after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 30px;
+    background-color: #111;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    display: block;
+}
+.row5 .item:last-child::after {
+    content: none;
+}
+
+.row5 .item > img {
+    margin-right: 20px;
+}
+.row5 .item h4 {
+    margin-bottom: 10px;
+}
+.row5 .item li, .row5 p {
+    font-size: 14px;
+}
+
+.row6 {
+    background-color: #f2f2f2;
+    text-align: center;
+    margin-top:18px;
+}
+
+/* footer */
+footer {
+    background-color: black;
+    color: white;
+}
+
+.fWrap {
+    width:980px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.map {
+    position:absolute;
+    display: flex;
+    top:25px;
+    right:150px;
+}
+.map li {
+    padding-right: 20px;
+    font-size: 12px;    
+}
+.bottom {
+    border-top: 1px solid #666;
+    display: flex;
+    position: relative;
+    align-items: center;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+.bottom .sns .check {
+    display: block;
+    padding:10px;
+    margin-top: 10px;
+    border: 2px solid white;
+    font-size: 14px;
+}
+.bottom address {
+    margin-left: 50px;
+    margin-top:10px;
+    font-style: normal;
+}
+.bottom address p:first-child {
+    color: #666;
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+.bottom address p:last-child {
+    font-size: 14px;
+}

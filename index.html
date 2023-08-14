@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L U S H</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!--시맨틱 태그, div처럼 레이아웃을 나누기 위한 박스같은 태그로 역할을 부여받은 태그
+        header, footer, nav, aside, section, article, figure, main
+        주의사항! <div class="container">는 <container>가 될 수 없다.
+    -->
+    <header>
+        <div class="hWrap">
+            <h1><a href="#"><img src="images/logo.jpg"></a></h1>
+            <!-- 로그인 회원가입 장바구니 주문배송 고객센터 매장찾기-->
+            <ul class="util">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+                <li><a href="#">장바구니</a></li>
+                <li><a href="#">주문배송</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">매장찾기</a></li>
+            </ul><!--util-->
+            <ul class="subGnb">
+                <li><a href="#">EVENT</a></li>
+                <li><a href="#">ZOOMIN</a></li>
+                <li><a href="#">BRAND</a></li>
+                <li><a href="#">SPA</a></li>
+                <li><a href="#">LUSHVIDEO</a></li>
+            </ul><!--subGnb-->
+            <form class="srch">
+                <input type="text">
+                <button>
+                    <img src="images/back_src.jpg" alt="검색하세요">
+                </button>
+            </form><!--srch-->
+            <ul class="gnb">
+                <li><a href="#">BEST</a></li>
+                <li><a href="#">Bath</a></li>
+                <li><a href="#">Shower</a></li>
+                <li><a href="#">Body</a></li>
+                <li><a href="#">Face</a></li>
+                <li><a href="#">Hair</a></li>
+                <li><a href="#">Makeup</a></li>
+                <li><a href="#">Perfume</a></li>
+                <li><a href="#">Promotion</a></li>
+                <li class="yellow"><a href="#">LUSH SCOUT</a></li>
+            </ul><!--gnb-->
+        </div><!--hWrap-->
+    </header><!--header-->
+    <div class="banner">
+
+        <div class="bnImg">
+            <a href="#"></a>
+        </div><!--bnImg 배너 이미지 영역-->
+
+         <button class="prev">
+            <img src="images/prev.png" alt="previous">
+         </button><!--prev-->
+        
+         <button class="next">
+            <img src="images/next.png" alt="next">
+         </button><!--prev-->
+
+         <ul class="pager">
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+         </ul><!--pager버튼 영역-->
+
+    </div><!--banner-->
+    <div class="row1">
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow1-1.jpg" alt="메인이미지1-1">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow1-2.jpg" alt="메인이미지1-2">
+            </a>
+        </div>
+    </div><!--row1-->
+    <div class="row2">
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow2-1.jpg" alt="메인이미지2-1">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow2-2.jpg" alt="메인이미지2-2">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow2-3.jpg" alt="메인이미지2-3">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow2-4.jpg" alt="메인이미지2-4">
+            </a>
+        </div>
+        <div class="item">
+            <a href="#">
+                <img src="images/mainrow2-5.jpg" alt="메인이미지2-5">
+            </a>
+        </div>
+    </div><!--row2-->
+    <div class="row3">
+        <h3><img src="images/tit_md.jpg" alt="md's pick"></h3>
+        <div class="con">
+            <div class="item1">
+                <a href="#">
+                    <img src="images/mdnum_01.jpg">
+                    <div class="txt">
+                        <h4>제품이름</h4>
+                        <p>제품설명</p>
+                    </div><!--txt-->
+                </a>
+            </div><!--item1-->
+            <div class="item2">
+                <a href="#">
+                    <img src="images/mdnum_02.jpg">
+                    <div class="txt">
+                        <h4>제품이름</h4>
+                        <p>제품설명</p>
+                    </div><!--txt-->
+                </a>
+            </div><!--item2-->
+            <div class="item3">
+                <a href="#">
+                    <img src="images/mdnum_03.jpg">
+                    <div class="txt">
+                        <h4>제품이름</h4>
+                        <p>제품설명</p>
+                    </div><!--txt-->
+                </a>
+            </div><!--item3-->
+            <div class="item4">
+                <a href="#">
+                    <img src="images/mdnum_04.jpg">
+                    <div class="txt">
+                        <h4>제품이름</h4>
+                        <p>제품설명</p>
+                    </div><!--txt-->
+                </a>
+            </div><!--item4-->
+            <div class="item5">
+                <a href="#">
+                    <img src="images/mdnum_05.jpg">
+                    <div class="txt">
+                        <h4>제품이름</h4>
+                        <p>제품설명</p>
+                    </div><!--txt-->
+                </a>
+            </div><!--item5-->
+        </div><!--con-->
+        
+        <!---캐러셀 버튼-->
+        <button class="mdPrev">
+            <img src="images/md_prev.jpg" alt="previous">
+        </button>
+        <button class="mdNext">
+            <img src="images/md_next.jpg" alt="next">
+        </button>
+    </div><!--row3-->
+    <div class="row4">
+        <a href="#">
+            <img src="images/subbn.jpg">
+        </a>
+    </div><!--row4-->
+    <div class="row5">
+        <h3><img src="images/tit_cs.jpg"></h3>
+        <div class="con">
+            <div class="item"><!--첫번째-->
+                <img src="images/ico_news.jpg">
+                <div>
+                    <h4><img src="images/tit_news.jpg"></h4>
+                    <ul>
+                        <li><a href="#">[공지사항] 젤러쉬 2기 발표</a></li>
+                        <li><a href="#">[공지사항] 3/8 (목) 내부 일정으로...</a></li>
+                        <li><a href="#">[공지사항] 2018 삼일절 배송 및...</a></li>
+                    </ul>
+                </div>
+            </div><!--item-->
+            <div class="item"><!--두번째-->
+                <img src="images/ico_membership.jpg">
+                <div>
+                    <h4><img src="images/tit_membership.jpg"></h4>
+                    <p>
+                        <a href="#">
+                            건강하고 가치있는<br>
+                            러쉬 스카우트 혜택<br>
+                            확인해보실래요?
+                        </a>
+                    </p>
+                </div>
+            </div><!--item-->
+            <div class="item"><!--세번째-->
+                <img src="images/ico_cscenter.jpg">
+                <div>
+                    <h4><img src="images/tit_cscenter.jpg"></h4>
+                    <a href="#">
+                        <p>
+                            TEL : 1644 - 2357<br>
+                            FAX : 02 - 795 - 7516<br>
+                            월~금 10:00 ~ 18:00
+                        </p>
+                    </a>
+                </div>
+            </div><!--item-->
+        </div><!--con-->
+    </div><!--row5-->
+    <div class="row6">
+        <img src="images/subbn2.jpg" alt="lush campaign">
+    </div><!--row6-->
+
+    <footer>
+        <div class="fWrap">
+            <h2><img src="images/flogo.jpg"></h2>
+            <ul class="map">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">이메일무단수집거부</a></li>
+                <li><a href="#">판매약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">매장찾기</a></li>
+            </ul>
+            <div class="bottom">
+                <div class="sns">
+                    <a href="#"><img src="images/ico_sns1.jpg"></a>
+                    <a href="#"><img src="images/ico_sns2.jpg"></a>
+                    <a href="#"><img src="images/ico_sns3.jpg"></a>
+                    <a href="#"><img src="images/ico_sns4.jpg"></a>
+                    <a href="#" class="check">구매안전 서비스 가입 확인</a>
+                </div><!--sns-->
+                <address>
+                    <p>
+                        사이트 운영자:㈜러쉬코리아 / 대표이사:우미령<br>
+                        서울시 서초구 서초동 1321-6 서초동아타워 6층<br>
+                        사업자 등록번호:201-81-77964 / 통신판매업 신고번호:2012-서울서초-0647 / 개인정보보호책임자:우승용<br>
+                        고객센터:1644-2357(운영시간:10:00~17:00, 점심시간:12:00~13:00) / FAX:02-795-7516 / 문의메일:webmaster@lush.co.kr
+                    </p>
+                    <p>
+                        Copyright © LUSHKOREA co., Ltd. All rights reserved.
+                    </p>
+                </address>
+            </div><!--bottom-->
+        </div><!--fWrap-->
+    </footer><!--footer-->
+</body>
+</html>
