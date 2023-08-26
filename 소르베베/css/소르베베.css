@@ -5,6 +5,7 @@ header {
     width: 100%;
     background-color: white;
     border-bottom: 1px solid #ddd;
+    z-index: 999;
 }
 .hWrap {
     display: flex;
@@ -25,6 +26,9 @@ header {
 }
 .gnb li {
     margin-left: 50px;
+}
+.gnb li a:hover {
+    color: #3badb5;
 }
 .util {
     display: flex;
@@ -74,4 +78,77 @@ header {
     border-radius: 50%;
     background-color: #555;
     margin: 0 4px;
+}
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    width: 980px;
+    margin: 64px auto 0;
+}
+.row2 {
+    width: 980px;
+    margin: 0 auto;
+}
+.row2 h3 {
+    margin: 20px 0 40px;
+}
+.row2 .con {
+    display: flex;
+    justify-content: space-between;
+}
+.row2 .con div {
+    margin-bottom: 22px;
+    position: relative;
+}
+
+.row2 .con div a img:last-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s;
+}
+.row2 .con a:hover img:last-child {
+    opacity: 1;
+}
+footer {
+    background-color: #32404d;
+}
+.fWrap {
+    display: flex;
+    align-items: center;
+    width: 980px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+}
+.fWrap h1 {
+    margin-right: 40px;
+}
+.fWrap p {
+    font-size: 13px;
+    color: #bbb;
+    margin: 6px auto;
+}
+.fWrap p span::before {
+    content: '|';
+    margin: 0 7px;
+    color: #bbb;
+}
+.fWrap .info {
+    color: #35dde9;
+    font-weight: bold;
+}
+.fWrap select {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: transparent;
+    color: #bbb;
+    border: 1px solid #bbb;
+    padding: 3px;
+}
+.fWrap select option {
+    background-color: #32404d;
+    padding: 3px;
 }
