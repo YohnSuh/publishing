@@ -1,0 +1,77 @@
+header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+.hWrap {
+    display: flex;
+    width: 980px;
+    height: 96px;
+    justify-content: space-between;
+    position: relative;
+    padding-top: 35px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.gnb {
+    display: flex;
+    padding-top: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #555;
+}
+.gnb li {
+    margin-left: 50px;
+}
+.util {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    font-size: 13px;
+    color: #aaa;
+    font-weight: 900;
+}
+.util li:first-child {
+    margin-right: 14px;
+    background: url('../images/ico_language.png') no-repeat left center / 9px;
+    padding-left: 15px;
+}
+.util li:last-child {
+    color: #3badb5;
+}
+.util li:after {
+    content: '|';
+    margin: 0 7px;
+}
+.util li:first-child::after,
+.util li:last-child::after {
+    content: none;
+}
+.banner {
+    position: relative;
+    width: 100%;
+    margin-top: 96px;
+}
+.banner a {
+    display: block;
+    height: 565px;
+    background: url('../images/main_visual_01.jpg') no-repeat center center / cover;
+}
+.banner ul {
+    display: flex;
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    justify-content: center;
+}
+.banner ul li {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #555;
+    margin: 0 4px;
+}
