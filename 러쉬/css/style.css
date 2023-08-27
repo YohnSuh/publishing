@@ -1,0 +1,51 @@
+header {
+    background-color: black;
+    height: 142px;
+}
+.hWrap {
+    width: 980px;
+    margin: 0 auto;
+}
+.top {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.top h1 {
+    margin-top: 35px;
+}
+.top .util {
+    display: flex;
+    position: absolute;
+    top: 24px;
+    right: 0;
+    color: white;
+}
+.top .util li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: #c5c5c5;
+}
+.top .util li::after {
+    content: '|';
+    margin: 0 7.5px;
+}
+.util li:last-child::after {
+    content: none;
+}
+.top .sub {
+    display: flex;
+    color: white;
+    margin-top: 60px;
+}
+.top > div {
+    height: 0;
+}
+.bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.bottom .gnb {
+    display: flex;
+    color: white;
+}
