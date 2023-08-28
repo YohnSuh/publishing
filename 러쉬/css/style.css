@@ -38,14 +38,38 @@ header {
     color: white;
     margin-top: 60px;
 }
-.top > div {
-    height: 0;
+.top form {
+    margin-top: 60px;
 }
 .bottom {
     display: flex;
     justify-content: space-between;
+    border-top: 1px solid white;
+    margin-top: 10px;
 }
 .bottom .gnb {
     display: flex;
+    width: 100%;
+    margin-top: 10px;
+}
+.bottom .gnb li {
     color: white;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 30px;
+}
+.bottom .gnb li:not(.yellow):hover {
+    background-color: white;
+    color: black;
+}
+.bottom .gnb li:not(.yellow) {
+    padding: 0 20px;
+}
+.bottom .gnb .best {
+    background-color: white;
+    color: black;
+}
+.bottom .gnb .yellow {
+    color: yellow;
+    margin-left: auto;
 }
