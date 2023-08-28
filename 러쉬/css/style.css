@@ -1,3 +1,4 @@
+/* header 영역 */
 header {
     background-color: black;
     height: 142px;
@@ -38,8 +39,26 @@ header {
     color: white;
     margin-top: 60px;
 }
+.top .sub li {
+    margin: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.top .sub .green {
+    color: green;
+}
 .top form {
-    margin-top: 60px;
+    margin-top: 50px;
+}
+.top form input {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 5px;
+    background-image: url('../images/back_src.jpg');
+    background-repeat: no-repeat;
+    background-position: right 5px center;
 }
 .bottom {
     display: flex;
@@ -72,4 +91,136 @@ header {
 .bottom .gnb .yellow {
     color: yellow;
     margin-left: auto;
+}
+
+/* main banner 영역 */
+.main {
+    position: relative;
+}
+.main .banner {
+    height: 400px;
+    background: url('../images/main_bn.jpg') no-repeat center / cover;
+}
+.main button {
+    border: 0;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.main butto img {
+    width: 25px;
+}
+.main .prev {
+    left: 50px;
+}
+.main .next {
+    right: 50px;
+}
+.main .pager {
+    display: flex;
+    justify-content: center;
+}
+.main .pager li {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc;
+    margin: 10px 5px;
+}
+
+/* main row1 영역 */
+.row1 {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 18px auto;
+}
+
+/* main row2 영역 */
+.row2 {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+}
+
+/* main row3 영역 */
+.row3 {
+    width: 940px;
+    margin: 0 auto;
+    position: relative;
+}
+.row3 h3 {
+    margin: 18px 0;
+}
+.row3 .con {
+    display: flex;
+    justify-content: space-between;
+    width: 875px;
+    margin: 0 auto;
+}
+.row3 .con > div {
+    width: 175px;
+    height: 209px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.row3 .item1 {
+    background-image: url('../images/md_itme1.jpg');
+}
+.row3 .item2 {
+    background-image: url('../images/md_itme2.jpg');
+}
+.row3 .item3 {
+    background-image: url('../images/md_itme3.jpg');
+}
+.row3 .item4 {
+    background-image: url('../images/md_itme4.jpg');
+}
+.row3 .item5 {
+    background-image: url('../images/md_itme5.jpg');
+}
+.row3 .con a div {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+.row3 .con h4 {
+    font-weight: bold;
+    color: #111;
+}
+.row3 .con p {
+    font-weight: 100;
+    color:#363636;
+}
+.row3 button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+}
+.row3 .prev {
+    left: 0;
+}
+.row3 .next {
+    right: 0;
+}
+
+/* main row4영역 */
+.row4 {
+    width: 980px;
+    margin: 0 auto;
+}
+
+/* main row5 영역 */
+.row5 {
+    width: 980px;
+    margin: 18px auto;
 }
