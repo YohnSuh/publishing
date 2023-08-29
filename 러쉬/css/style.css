@@ -224,3 +224,93 @@ header {
     width: 980px;
     margin: 18px auto;
 }
+.row5 .con {
+    display: flex;
+    justify-content: center;
+}
+.row5 .item {
+    display: flex;
+    position: relative;
+    width: calc(100% / 3);
+    justify-content: center;
+    align-items: center;
+}
+.row5 .item::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 1px;
+    height: 30px;
+    background-color: black;
+    transform: translateY(-50%);
+}
+.row5 .item:first-child::after {
+    content: none;
+}
+.row5 .item > img {
+    margin-right: 20px;
+}
+.row5 li, .row5 p {
+    font-size: 14px;
+}
+
+/* main row6 영역 */
+.row6 {
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* footer 영역 */
+footer {
+    background-color: black;
+}
+.fWrap {
+    width: 980px;
+    margin: 0 auto;
+    padding: 10px 0 20px;
+}
+.fWrap .item1 {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 10px 0;
+}
+.fWrap .item1 .map {
+    display: flex;
+    color: white;
+    font-size: 12px;
+    margin-left: 20px;
+}
+.fWrap .item1 .map li {
+    margin: 10px;
+}
+.fWrap .item2 {
+    display: flex;
+    border-top: 1px solid white;
+    padding-top: 10px;
+}
+.fWrap .item2 .sns {
+    display: flex;
+}
+.fWrap .item2 .sns li {
+    margin-right: 5px;
+}
+.fWrap .item2 .check {
+    display: block;
+    width: 200px;
+    border: 2px solid white;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+.fWrap address {
+    font-style: normal;
+    color: #777;
+    font-size: 12px;
+    margin-left: 30px;
+}
+.fWrap address p span {
+    color: white;
+}
