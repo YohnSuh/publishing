@@ -1,0 +1,248 @@
+header {
+    border-top: 2px solid #50b5ff;
+    height: 57px;
+    box-sizing: border-box;
+}
+.hWrap {
+    display: flex;
+    width: 1092px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.hWrap h1 {
+    margin-top: 10px;
+}
+.hWrap .gnb {
+    display: flex;
+    font-size: 16px;
+    font-weight: bold;
+}
+.hWrap .gnb li:not(:last-child) {
+    margin-left: 50px;
+}
+.hWrap form {
+    position: relative;
+}
+.hWrap form input {
+    width: 143px;
+    height: 26px;
+    padding: 0 30px 0 10px;
+    border: 1px solid #ddd;
+}
+.hWrap form button {
+    background-color: transparent;
+    border: 0;
+    position: absolute;
+    top:5px;
+    right: 5px;
+    cursor: pointer;;
+}
+.hWrap .util {
+    display: flex;
+}
+.hWrap .util li {
+    width: 64px;
+    height: 28px;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    line-height: 28px;
+}
+.hWrap .util li:nth-child(1) {
+    background-color: #f49600;
+    margin-right: 5px;
+}
+.hWrap .util li:nth-child(2) {
+    background-color: #50b5ff;
+}
+.mainBanner {
+    height: 454px;
+    background: url('../images/key_bg.jpg') no-repeat center / cover;
+}
+.mainBanner h2 {
+    padding-top: 80px;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+.mainBanner > p {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+.mainBanner .srch {
+    width: 600px;
+    height: 100px;
+    margin: 60px auto 0;
+    background-color: rgba(0,0,0,.7);
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+.mainBanner .srch form {
+    position: relative;
+}
+.mainBanner .srch input {
+    width: 560px;
+    height: 50px;
+    padding: 0 50px 0 20px;
+    box-sizing: border-box;
+}
+.mainBanner .srch button {
+    position: absolute;
+    top: 2px;
+    right: 20px;
+    border: 0;
+    background-color: transparent;
+}
+.mainBanner .srch div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    margin: 5px 20px 0;
+    font-size: 14px;
+}
+
+.s1 {
+    margin-bottom: 70px;
+}
+.s1 h3 {
+    font-size: 26px;
+    color: #333;
+    text-align: center;
+    padding: 80px 0 30px;
+}
+.s1 .wrap {
+    display: flex;
+    width: 1092px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.s1 .item {
+    width: 348px;
+}
+.s1 .item h4 {
+    text-align: center;
+    padding: 30px 0 22px;
+    color: #0087ea;
+    font-size: 18px;
+}
+.s1 .item p {
+    font-size: 14px;
+    color: #666;
+}
+.s1 > a {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #f49600;
+    margin-top: 25px;
+}
+
+.s2 {
+    padding: 70px 0;
+    background-color: #ddd;
+}
+.s2 h3 {
+    text-align: center;
+    font-size: 26px;
+    color: #333;
+}
+.s2 > p {
+    text-align: center;
+    font-size: 16px;
+    color: #666;
+    margin: 10px 0 30px;
+}
+.s2 .wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1092px;
+    margin: 0 auto;
+}
+.s2 a {
+    margin-bottom: 24px;
+}
+.s2 .box {
+    width: 346px;
+    border: 1px solid #ccc;
+    background-color: white;
+}
+.s2 .pic {
+    position: relative;
+    width: 346px;
+    height: 200px;
+    overflow: hidden;
+}
+.s2 .pic img {
+    width: 100%;
+    transition: .5s;
+}
+.s2 .pic:hover img {
+    transform: scale(1.1);
+}
+.s2 .pic > div {
+    position: absolute;
+    width: 100%;
+    height: 48px;
+    bottom:0;
+    left: 0;
+    padding: 5px 15px;
+    background: linear-gradient(transparent, rgba(0,0,0,.7));
+    font-weight: bold;
+}
+.s2 .pic > div p {
+    color: #179dff;
+}
+.s2 .pic > div p span {
+    color: #999;
+}
+.s2 .pic > div h4 {
+    color: white;
+}
+.s2 .box > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+    color: #666;
+    font-size: 14px;
+}
+.s2 .info p:not(:last-child) {
+    margin-bottom: 6px;
+}
+.s2 .info .user {
+    padding-left: 20px;
+    background: url('../images/icon_user.png') no-repeat left center / 15px;
+}
+.s2 .num {
+    display: flex;
+}
+.s2 .num p {
+    height: 20px;
+    padding-left: 15px;
+}
+.s2 .num p:nth-child(1) {
+    background: url('../images/icon_spot.png') no-repeat left center / 10px;
+}
+.s2 .num p:nth-child(2) {
+    background: url('../images/icon_view.png') no-repeat left center / 15px;
+    margin: 0 10px;
+}
+.s2 .num p:nth-child(3) {
+    background: url('../images/icon_copy.png') no-repeat left center / 10px;
+}
+.s2 > a {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    width: 346px;
+    padding: 12px 0;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    color: #666;
+    background-color: white;
+}
