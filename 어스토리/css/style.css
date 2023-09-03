@@ -356,10 +356,9 @@ header {
     width: 1092px;
     margin: 0 auto;
 }
-.s5 .txt {
+/* .s5 .txt {
     width: 100%;
-    margin-left: 120px;
-}
+} */
 .s5 h3 {
     font-size: 26px;
     color:#0087ea;
@@ -373,4 +372,64 @@ header {
 }
 .s5 .store li {
     margin-right: 10px;
+}
+
+footer {
+    background-color: #363c48;
+}
+.fWrap {
+    width: 1092px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.fWrap > div {
+    width: 100%;
+    margin: 0 5px;
+}
+.fWrap h4 {
+    width: 100%;
+    color: #ccc;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #424756;
+    margin-bottom: 20px;
+}
+.fWrap ul li {
+    color: white;
+    font-size: 14px;
+    margin: 8px;
+}
+.fWrap .option {
+    position: relative;
+}
+.fWrap .option div {
+    position: absolute;
+    top: 30px;
+}
+.fWrap .option select {
+    width: 113px;
+    margin-right: 10px;
+    border: 1px solid #424753;
+    background-color: transparent;
+    color: #ccc;
+    font-size: 16px;
+    padding: 3px;
+}
+.fWrap .option .sns {
+    position: absolute;
+    top: 40%;
+    display: flex;
+}
+footer .copy {
+    background-color: rgba(0,0,0,0.2);
+}
+footer .copy div {
+    width: 1092px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #ccc;
+    font-size: 12px;
+    padding: 5px 0;
 }
